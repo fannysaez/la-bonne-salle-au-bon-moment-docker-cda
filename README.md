@@ -6,11 +6,9 @@ Orchestration Docker (frontend + backend + MongoDB) pour le projet "La Bonne Sal
 
 ## Aperçu
 
-### Frontend
-![Frontend](screenshots/Frontend.png)
-
-### Backend (API)
-![Backend](screenshots/Backend-API.png)
+| Frontend | Backend (API) |
+|---|---|
+| <img src="screenshots/Frontend.png" width="400"> | <img src="screenshots/Backend-API.png" width="400"> |
 
 ---
 
