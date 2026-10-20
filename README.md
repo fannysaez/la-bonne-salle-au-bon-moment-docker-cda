@@ -1,4 +1,4 @@
-# la-bonne-salle-au-bon-moment-docker-cda
+# La-bonne-salle-au-bon-moment-docker-cda
 
 Orchestration Docker (frontend + backend + MongoDB) pour le projet "La Bonne Salle au Bon Moment".
 
@@ -132,6 +132,22 @@ Une fois les données importées, on peut démarrer tous les services (frontend 
 ```bash
 docker compose up
 ```
+
+---
+
+## Swagger — persister l'authentification
+
+Par défaut, le token JWT saisi dans `/api-docs` (bouton "Authorize") est perdu à chaque actualisation de la page. Pour qu'il persiste, l'option `persistAuthorization` est activée côté back-end (`src/app.ts`) :
+
+```typescript
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec, {
+  swaggerOptions: {
+    persistAuthorization: true
+  }
+}));
+```
+
+Ce réglage ne touche pas à la sécurité des routes (toujours protégées par JWT), c'est juste un confort pour éviter de ressaisir le token à chaque fois.
 
 ---
 
