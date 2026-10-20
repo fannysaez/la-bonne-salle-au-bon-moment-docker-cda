@@ -34,7 +34,7 @@ docker compose up
 ```
 
 - Frontend : http://localhost:5173
-- Backend : http://localhost:3000
+- Backend : http://localhost:3000 (API préfixée en `/api`, ex: `/api/users`)
 - Documentation API : http://localhost:3000/api-docs
 
 ## Arrêter le projet
