@@ -2,6 +2,18 @@
 
 Orchestration Docker (frontend + backend + MongoDB) pour le projet "La Bonne Salle au Bon Moment".
 
+---
+
+## Aperçu
+
+### Frontend
+![Frontend](screenshots/Frontend.png)
+
+### Backend (API)
+![Backend](screenshots/Backend-API.png)
+
+---
+
 ## Prérequis
 
 - Docker et Docker Compose installés
@@ -20,12 +32,11 @@ git clone git@github.com:fannysaez/la-bonne-salle-au-bon-moment-backend-cda.git
 
 Créer le fichier `.env` dans `la-bonne-salle-au-bon-moment-backend-cda/` :
 
-```env
+```bash
 PORT=3000
 MONGO_URI=mongodb://mongo:27017/la-bonne-salle-au-bon-moment
 JWT_SECRET=<ta_valeur_secrete>
 ```
-
 
 ## Lancer le projet
 
