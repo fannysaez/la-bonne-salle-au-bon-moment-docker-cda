@@ -46,10 +46,18 @@ docker compose up
 - Backend : http://localhost:3000 (API préfixée en `/api`, ex: `/api/users`)
 - Documentation API : http://localhost:3000/api-docs
 
+---
 ## Arrêter le projet
 
+Pause rapide (conteneurs gardés, redémarrage instantané) :
+```bash
+docker compose stop
+```
+
+Arrêt complet (conteneurs supprimés, données conservées) :
 ```bash
 docker compose down
 ```
 
+---
 Les données MongoDB sont conservées dans le volume `docker-react_mongo_data`.
